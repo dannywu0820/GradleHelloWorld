@@ -11,6 +11,12 @@ plugins {
     id 'java-library'
 }
 
+jar {
+	manifest {
+		attributes 'Main-Class': 'com.example.Main'
+	}
+}
+
 repositories {
     // Use JCenter for resolving dependencies.
     jcenter()
